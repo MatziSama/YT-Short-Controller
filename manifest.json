@@ -1,0 +1,34 @@
+{
+    "name": "Getting Started Example",
+    "description": "Build an Extension!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://www.youtube.com/shorts/*"
+    ],
+    "externally_connectable" : {
+        "matches": [ "https://www.youtube.com/*" ]
+      },
+    "web_accessible_resources": [
+        {
+            "resources": ["controller-style.css"],
+            "matches": ["https://www.youtube.com/*"]
+        },
+        {
+            "resources": ["script.js"],
+            "matches": ["https://www.youtube.com/*"]
+        },
+        {
+            "resources": ["controller.js"],
+            "matches": ["https://www.youtube.com/*"]
+        }
+    ],
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwhhZ1EgwJdsqpCAY9EoaiuynzCvGO0EJieySRkBmbHSKbopdHRtGw/Bkvlby5A+C9vL5R3Ctz4rejMpatVT9eyRNcudy0H9/HwEeifz/A0eWDgpVUI8WI102/+D1Rzoh5O+BOGJIUJMORWQfGY+5ko9lwBuW2LU8pniBOrcEPiCpOvdNNzjYSt0tp6P5aelTKqwrJELY50Pagv0krDzbrFAybWP2+kG7FfJg+eHIE/WR5XRzrrMoFnEUw6dcaokdqtDo6vKja3vaSMwrr24d5WfaOvEYHsfEI6/84DdOqt7ghMo+F9Tj/1/wMWTzHTXTJ7oses3klX57u+ynE1gsvwIDAQAB"
+}
